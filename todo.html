@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do App</title>
+    <script src="action.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="todoStyles.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div class="list" id="list0">
+            <div class="heading">
+                <input class="listTitle" placeholder="Write a title for your list...">
+                <i class="xCircle fas fa-times-circle"></i>
+            </div>
+            <div class="allTodos">
+                <div class="todo-container">
+                    <div class="todo-left">
+                        <i class="checkBox far fa-square" onclick="check(this)"></i>
+                    </div>
+                    <div class="todo-right">
+                        <input class='todoInput' type="text" placeholder="Write a to-do...">
+                        <i class="xCircle fas fa-times-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="todo-add" id="add0" onclick="addTodo(this)">
+                <i class="fas fa-plus-square"></i>
+                <p>Add a new task in this list</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-add" onclick="addList()">
+        <i class="fas fa-plus-square"></i>
+        <p>Add a new list</p>
+    </div>
+    <div class="todo-check-clear" onclick="clearChecked()">
+        <i class="fas fa-check"></i>
+        <p>Clear all checked items</p>
+    </div>
+</body>
+</html>

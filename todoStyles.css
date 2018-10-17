@@ -1,0 +1,125 @@
+html, body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+i{
+    font-size: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.checkBox{
+    font-size: 30px;
+}
+h1{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #F7A403; /*#60CD3B;*/
+    border-radius: 5px;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.heading input{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #F7A403;
+    border-style: none;
+}
+input::placeholder{
+    color: black;
+    opacity: .50;
+}
+.heading input:focus{
+    outline: none
+}
+
+.allTodos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-container{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.todo-left{
+    background-color: #F7A403; /*#60CD3B;*/
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+}
+
+.todo-right{
+    background-color: white;
+    display: flex;
+    width: 95%;
+    align-items: center;
+}
+.todo-right input{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}
+.todo-right input:focus{
+    outline: none
+}
+.todo-add{
+    display: flex;
+    align-items: center;
+}
+.list-add{
+    display: flex;
+    align-items: center;
+}
+.todo-check-clear{
+    display: flex;
+    align-items: center;
+}
